@@ -1,0 +1,285 @@
+@charset "UTF-8";
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing:border-box;
+    font-family: 'Roboto', sans-serif;
+}
+ul{
+    list-style: none;
+}
+a{
+    text-decoration: none;
+}
+.banner {
+    width: 100%;
+    background-attachment: fixed;
+}
+/* nav */
+.nav {
+    min-height: 42px;
+    background-color: #FC9090;
+    display: flex;
+    justify-content: space-between;
+}
+.nav-list {
+    padding-left: 0;
+    margin: auto 15px;
+}
+.nav li {
+    color: #333;
+    list-style: none;
+    margin: 0 8px;
+    display: inline-block;
+    cursor: pointer;
+    font-family:Arial, Helvetica, sans-serif
+}
+.nav a:hover {
+    color: black;
+}
+header{
+    position: relative;
+}
+.header-top ul {
+    position: fixed; 
+    background:none;
+    padding: 150px 0 0 50px;
+    right: 0;
+    width: 300px;
+    height: 100%;
+    display:block;
+    opacity: 1;
+    z-index: 1;
+}   
+.header-top ul.active{
+    display: block;
+    opacity: 1;
+}
+.header-top ul li {
+    margin-bottom: 20px;
+    font-size:20px;
+    cursor: pointer;
+    
+}
+
+.header-top ul li a{
+    display: block;
+    background-color: burlywood;
+    padding: 20px;
+    transition: all 0.3s ease;
+    border-bottom-left-radius: 10px;
+    border-top-left-radius: 10px;
+    color: #fff;
+}
+.header-top ul li a:hover{
+    color: tomato;
+}
+.header-container{
+   position: absolute;
+   top: 0;
+   left: 0;
+   min-height: 100%;
+   background-color: rgba(255, 255, 255, 0.1);
+   padding: 150px 0 0 50px;
+   text-align: center;
+   width: 400px;
+}
+.header-container> h1{
+    color: tomato;
+}
+.header-container> p{
+    color: tomato;
+}
+form{
+    padding: 30px 12px;
+    background-color: #fff;
+    margin-top: 30px;
+}
+form h1{
+    color: #333;
+    font-size: 27px;
+}
+form select,input{
+    width: 100%;
+    height: 35px;
+    padding-left: 12px;
+    outline: none;
+    background-color: #dddd;
+    border: none;
+}
+form p {
+    text-align: left;
+    color: burlywood;
+    margin: 8px 0 3px;
+}
+form button{
+    height: 35px;
+    width: 150px;
+    background-color: burlywood;
+    color: #fff;
+    margin-top: 20px;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+    transition: all 0.3s ease;
+}
+form button:hover{
+    background-color: transparent;
+    border: 1px solid burlywood;
+    color: burlywood;
+
+}
+/* footer */
+.foter {
+    margin: 10px auto;
+}
+
+
+/* dia điểm nổi bật*/
+.gioithieu{
+    padding: 100px 0;
+}
+.row{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+   
+}
+.content{
+    max-width: 1024px;
+    margin: auto;
+}
+.gioithieu-item{
+    width: 30%;
+    height: 400px;
+    position: relative;
+    overflow: hidden;
+}
+.gioithieu-item:hover .text{
+    transform: translateX(0%);
+} 
+.gioithieu-item img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    position: absolute;
+    margin-top: 50px;
+    border: 1px solid orange;
+}
+.text{
+    position: absolute;
+    width: 100%;
+    height: 200px;
+    bottom: 0;
+    padding: 12px;
+    background: linear-gradient(to right, rgb(0,0,0.8),rgba(255,255,255,0));
+    transform: translateX(-100%);
+    
+}
+.text h2 {
+    color: burlywood;
+}
+.text p{
+    color: #fff;
+    margin: 12px 0;
+}
+.gioithieu h1{
+    text-align: center;
+    margin-bottom: 50px;
+    color: burlywood;
+    position: relative;
+}
+.gioithieu h1::before{
+    position: absolute;
+    content: "";
+    height: 5px;
+    width: 150px;
+    background-color: burlywood;
+    border-radius: 5px;
+    bottom: -10px;
+    left: 50%;
+    transform: translate(-50%);
+}
+.mon {
+    margin: 15px auto;
+
+}
+.mon-an-ngon {
+    max-width:800px;
+    margin :10px auto; 
+}
+
+
+/*danhgia*/
+* {
+    box-sizing: border-box;
+}
+
+body {
+    width: auto;
+
+    background-size: auto;
+    background-repeat: no-repeat;
+}
+
+.share-body {
+    width: auto;
+    margin: 0 0 0 10px;
+}
+
+h1 {
+    display: grid;
+    place-items: center;
+    width: auto;
+    color: #201e1e;
+}
+
+textarea {
+    width: 70%;
+    height: 200px;
+    padding: 12px 20px;
+    box-sizing: border-box;
+    border: 2px solid #ccc;
+    border-radius: 4px;
+    background-color: #f8f8f8;
+    font-size: 16px;
+    outline: none;
+    resize: none;
+}
+
+.button {
+    color: #fff;
+    background-color: #FC9090;
+    border-radius: 5px;
+    outline: none;
+    border: none;
+    padding: 1rem 2rem;
+    transition: all .2s;
+    cursor: pointer;
+    margin-top: 10px;
+}
+
+.button:hover {
+    transform: translateX(-2px);
+}
+
+.button:active {
+    transform: translateX(4px);
+}
+
+/* reponsive*/
+@media screen and (max-width:780px) {
+    .header-container{
+        width: 100%;
+    }
+    .gioithieu{
+        padding: 50px 0;
+    }
+    .gioithieu-item{
+        width: 100%;
+        margin-bottom: 20px;
+        padding: 0px 12px;
+        margin-right: 10px;
+    }
+      
+}
